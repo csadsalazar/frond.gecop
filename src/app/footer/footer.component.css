@@ -1,0 +1,26 @@
+.footer {
+  background: linear-gradient(90deg, #139EC8 0%, #01599A 100%);
+  color: white;
+}
+
+.footer .links ul {
+  list-style-type: none;
+}
+
+.footer .links li a {
+  color: white;
+  transition: color 0.2s;
+}
+
+.footer .links li a:hover {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.footer .copyright p {
+  border-top: 1px solid;
+}
+
+.text-white{
+  margin-top: -12px;
+}

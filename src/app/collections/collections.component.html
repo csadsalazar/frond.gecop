@@ -1,0 +1,73 @@
+<app-header></app-header>
+<div id="wrapper">
+  <app-navbar></app-navbar>
+  <div id="content-wrapper" class="d-flex flex-column">
+    <div id="content">
+      <app-topbar></app-topbar>
+      <div class="container-fluid">
+        <h1 class="h3 mb-2 text-gray-800 text-center">Gestión cobro coactivo</h1>
+        <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+          <div class="input-group mt-3">
+            <label for="fecha-inicial">Fecha inicial</label>
+            <input type="date" id="fecha-inicial" class="form-control bg-light border-0 small ml-2">
+            <label class="ml-3" for="fecha-final">Fecha final</label>
+            <input type="date" id="fecha-final" class="form-control bg-light border-0 small ml-2">
+          </div>
+        </form>   
+        <div class="card shadow mb-4 mt-3">
+          <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Texto opcional</h6>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                  <tr>
+                    <th>N° Radicado</th>
+                    <th>N° Proceso</th>
+                    <th>Tipo proceso</th>
+                    <th>Etapa proceso</th>
+                    <th>Nombre deudor</th>
+                    <th>Cédula</th>
+                    <th>Abogado asignado</th>
+                    <th>Fecha inscripción</th>
+                    <th>Fecha preinscripción</th>
+                    <th>Monto (IML)</th>
+                    <th>Tipo multa</th>
+                    <th>Etapa proceso</th>
+                    <th>Motivo</th>
+                    <th class="px-5">Acciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>N° Proceso</td>
+                    <td>N° Radicado</td>
+                    <td>Tipo proceso</td>
+                    <td>Etapa proceso</td>
+                    <td>Nombre del deudor</td>
+                    <td>Cédula</td>
+                    <td>Abogado asignado</td>
+                    <td>Fecha de inscripción</td>
+                    <td>Fecha de preinscripción</td>
+                    <td>Monto (IML)</td>
+                    <td>Tipo multa</td>
+                    <td>Etapa del proceso</td>
+                    <td>Motivo</td>
+                    <td>            
+                      <div class="text-center">
+                        <button class="btn btn-primary">Editar</button>
+                        <button class="btn btn-primary">Ver Cobro</button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
